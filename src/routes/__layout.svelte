@@ -2,12 +2,14 @@
 	import '../app.css';
 </script>
 
-<header class="h-16 bg-slate-600" />
+<div class="bg-slate-700 min-h-screen">
+	<header class="h-16" />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<footer>
-	<!---->
-</footer>
+	<footer>
+		<!---->
+	</footer>
+</div>
