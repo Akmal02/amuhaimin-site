@@ -2,23 +2,21 @@
 	import '../app.css';
 </script>
 
-<div class="min-h-screen bg-neutral-800">
-	<header class="p-8">
-		<nav class="flex flex-row justify-end gap-1 text-white">
-			<a href="/">About</a>
-			<a href="/">Projects</a>
-			<a href="/">Contact</a>
-		</nav>
-	</header>
+<header class="p-8">
+	<nav class="flex flex-row justify-end gap-1 text-white">
+		<a href="/">About</a>
+		<a href="/">Projects</a>
+		<a href="/">Contact</a>
+	</nav>
+</header>
 
-	<main>
-		<slot />
-	</main>
+<main>
+	<slot />
+</main>
 
-	<footer>
-		<!---->
-	</footer>
-</div>
+<footer>
+	<!---->
+</footer>
 
 <style lang="postcss">
 	header,
