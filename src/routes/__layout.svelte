@@ -5,7 +5,7 @@
 <header class="p-8">
 	<nav class="flex flex-row justify-end gap-1 text-white">
 		<a href="/">About</a>
-		<a href="/">Projects</a>
+		<a href="#projects">Projects</a>
 		<a href="/">Contact</a>
 	</nav>
 </header>

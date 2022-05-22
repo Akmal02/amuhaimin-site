@@ -12,13 +12,21 @@
 	<h1 class="mb-8 text-4xl font-bold text-white">Projects</h1>
 	<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
 		{#each [1, 2, 3, 4, 5, 6] as i}
-			<div class="rounded-xl bg-white bg-opacity-10 p-8 shadow-md">
-				<img src="https://picsum.photos/400/400?i={i}" class="w-full" />
-				<h2 class="mt-8 text-2xl font-bold text-white">Title</h2>
-				<p class="mt-2 text-white text-opacity-60">Description</p>
-				<div class="mt-8 flex flex-row gap-4">
-					<button>Demo</button>
-					<button>Project page</button>
+			<div class="relative rounded-xl bg-white bg-opacity-10 shadow-md">
+				<img
+					src="https://picsum.photos/400/300?i={i}"
+					height="300"
+					width="400"
+					class="rounded-t-xl"
+					alt=""
+				/>
+				<div class="p-8">
+					<h2 class="text-2xl font-bold text-white">Title</h2>
+					<p class="mt-2 text-white text-opacity-60">Description</p>
+					<div class="mt-8 flex flex-row gap-4">
+						<button>Demo</button>
+						<button>Project page</button>
+					</div>
 				</div>
 			</div>
 		{/each}
