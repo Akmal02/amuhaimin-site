@@ -1,18 +1,29 @@
+<script lang="ts">
+	import Header from '$lib/components/Headline.svelte';
+	import Frosted from '$lib/components/Frosted.svelte';
+	import ParticleBackground from '$lib/components/ParticleBackground.svelte';
+</script>
+
+<ParticleBackground />
 <section>
 	<div class="py-16">
 		<p class="text-3xl font-bold text-white text-opacity-60">Hello, I am</p>
 		<p class="mt-2 text-6xl font-bold text-white">Akmal Muhaimin</p>
 		<p class="mt-8 text-2xl text-white text-opacity-60">
-			Full stack developer · Mobile apps · Websites
+			Full stack developer · Mobile apps · Websites · UI Design
 		</p>
 	</div>
 </section>
 
+<section id="about">
+	<Header label="About" />
+</section>
+
 <section id="projects">
-	<h1 class="mb-8 text-4xl font-bold text-white">Projects</h1>
+	<Header label="Projects" />
 	<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
 		{#each [1, 2, 3, 4, 5, 6] as i}
-			<div class="relative rounded-xl bg-white bg-opacity-10 shadow-md">
+			<Frosted>
 				<img
 					src="https://picsum.photos/400/300?i={i}"
 					height="300"
@@ -28,9 +39,12 @@
 						<button>Project page</button>
 					</div>
 				</div>
-			</div>
+			</Frosted>
 		{/each}
 	</div>
+</section>
+<section id="contact">
+	<Header label="Contact" />
 </section>
 
 <style lang="postcss">

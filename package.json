@@ -35,5 +35,10 @@
 		"tslib": "^2.3.1",
 		"typescript": "~4.6.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-particles": "^2.0.6",
+		"tsparticles": "^2.0.6",
+		"tsparticles-preset-fireworks": "^2.0.6"
+	}
 }
