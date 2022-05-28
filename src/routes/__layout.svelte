@@ -29,7 +29,7 @@
 </main>
 
 <footer>
-	<!---->
+	<p>&copy; {new Date().getFullYear()} Akmal Muhaimin</p>
 </footer>
 
 <ScrollToTopButton />
