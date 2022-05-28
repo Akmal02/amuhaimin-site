@@ -1,16 +1,16 @@
 <script lang="ts">
 	import Header from '$lib/components/Headline.svelte';
 	import Frosted from '$lib/components/Frosted.svelte';
-	import ParticleBackground from '$lib/components/ParticleBackground.svelte';
 </script>
 
-<ParticleBackground />
-<section>
-	<div class="py-16">
+<section class="h-screen ">
+	<div class="flex h-full flex-col justify-center py-16">
 		<p class="text-3xl font-bold text-white text-opacity-60">Hello, I am</p>
 		<p class="mt-2 text-6xl font-bold text-white">Akmal Muhaimin</p>
 		<p class="mt-8 text-2xl text-white text-opacity-60">
-			Full stack developer · Mobile apps · Websites · UI Design
+			{@html ['Full stack developer', 'Mobile apps', 'Websites', 'UI design'].join(
+				'&nbsp;&nbsp;·&nbsp;&nbsp;'
+			)}
 		</p>
 	</div>
 </section>

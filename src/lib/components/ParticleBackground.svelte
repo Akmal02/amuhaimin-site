@@ -1,20 +1,18 @@
 <script lang="ts">
-	// import particlesConfig from '$lib/particles.json';
+	import particlesConfig from '$lib/particles.json';
 	import { onMount, SvelteComponent } from 'svelte';
-	import type { Engine } from 'tsparticles-engine';
+	import type { Engine, ISourceOptions } from 'tsparticles-engine';
+	import { loadFull } from 'tsparticles';
 	import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
 
 	let ParticlesComponent: SvelteComponent;
 
-	const particlesConfig = {
-		preset: 'fireworks',
-		fullScreen: {
-			zIndex: -1
-		},
-		background: {
-			opacity: 0
-		}
-	};
+	// const particlesConfig: ISourceOptions = {
+	// 	preset: 'fireworks',
+	// 	fullScreen: {
+	// 		zIndex: -1
+	// 	}
+	// };
 
 	onMount(async () => {
 		const module = await import('svelte-particles');
@@ -23,8 +21,8 @@
 	});
 
 	let particlesInit = async (engine: Engine) => {
-		await loadFireworksPreset(engine);
-		// await loadFull(main);
+		// await loadFireworksPreset(engine);
+		await loadFull(engine);
 	};
 </script>
 
