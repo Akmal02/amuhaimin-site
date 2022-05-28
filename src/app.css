@@ -8,4 +8,8 @@
     scroll-behavior:smooth;
     @apply text-white;
   }
+
+  p {
+    @apply leading-tight !important;
+  }
 }

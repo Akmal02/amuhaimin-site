@@ -6,7 +6,7 @@
 <section class="h-screen">
 	<div class="flex h-full flex-col justify-center py-16">
 		<p class="text-3xl font-bold text-white text-opacity-60">Hello, I am</p>
-		<p class="mt-2 text-6xl font-bold text-white">Akmal Muhaimin</p>
+		<p class="mt-2 text-6xl font-bold  text-white">Akmal Muhaimin</p>
 		<p class="mt-8 text-2xl text-white text-opacity-60">
 			{@html ['Full stack developer', 'Mobile apps', 'Websites', 'UI design'].join(
 				'&nbsp;&nbsp;·&nbsp;&nbsp;'
@@ -15,17 +15,17 @@
 	</div>
 </section>
 
-<div id="about" class="bg-green-500">
+<div id="about">
 	<Header label="About" />
 	<section />
 </div>
 
-<div id="expertise" class="bg-blue-500">
+<div id="expertise">
 	<Header label="Expertise" />
 	<section />
 </div>
 
-<div id="projects" class="bg-red-500">
+<div id="projects">
 	<Header label="Projects" />
 	<section>
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -52,12 +52,12 @@
 	</section>
 </div>
 
-<div id="vision" class="bg-orange-500">
+<div id="vision">
 	<Header label="Vision" />
 	<section />
 </div>
 
-<div id="contact" class="bg-teal-500">
+<div id="contact">
 	<Header label="Contact" />
 	<section />
 </div>
