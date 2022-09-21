@@ -1,11 +1,22 @@
+const colors = require('tailwindcss/colors');
+
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
 		fontFamily: {
-			sans: ["Plus Jakarta Sans", "sans-serif"],
+			sans: ['Barlow', 'sans-serif'],
 		},
-		extend: {}
+		fontWeight: {
+			light: 200,
+			normal: 400,
+			bold: 700
+		},
+		extend: {
+			colors: {
+				gray: colors.zinc
+			}
+		}
 	},
 
 	plugins: []
